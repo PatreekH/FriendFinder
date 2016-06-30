@@ -9,132 +9,163 @@
 </head>
 <body>
 
-<div class="jumbotron">
-  <h1 class="text-center">Friend Finder Survey</h1>
+<div class="container">
+	<h2>Survey Questions</h2>
+	<hr>
+	<h3><strong>About You</strong></h3>
+	<h4>Name (Required)</h4>
+	<input type="text" name="" id="name" class="form-control" required="">
+
+	<h4>Link to Photo Image (Required)</h4>
+	<input type="text" name="" id="photo" class="form-control" required="">
+	
+	<br>
+	<br>
+
+	<div class="rules">
+	<h5>(Strongly disagree)<strong>1 - 5</strong>(Strongly agree)</h5>
+	</div>
+
 </div>
 
-	<div class="container">
+	<div class="container" id="container">
 
-		<h2>Survey Questions</h2>
-		<hr>
+		<div id="box1" class="box">
+			<h3><strong>Question 1</strong></h3>
+			<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+			<select class="q1">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="1">Next Question</button>
+		</div>
 
-		<h3><strong>About You</strong></h3>
-		<h4>Name (Required)</h4>
-		<input type="text" name="" id="name" class="form-control" required="">
+		<div id="box2" class="box">
+			<h3><strong>Question 2</strong></h3>
+			<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
 
-		<h4>Link to Photo Image (Required)</h4>
-		<input type="text" name="" id="photo" class="form-control" required="">
+			<select class="q2">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="2">Next Question</button>
+		</div>
 
-		<hr>
+		<div id="box3" class="box">
+			<h3><strong>Question 3</strong></h3>
+			<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
 
-		<h3><strong>Question 1</strong></h3>
-		<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-		<select class="q1">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+			<select class="q3">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="3">Next Question</button>
+		</div>
 
-		<h3><strong>Question 2</strong></h3>
-		<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-		<select class="q2">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+		<div id="box4" class="box2">
+			<h3><strong>Question 4</strong></h3>
+			<h4>You rarely do something just out of sheer curiosity.</h4>
+			<select class="q4">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="4">Next Question</button>
+		</div>
 
-		<h3><strong>Question 3</strong></h3>
-		<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-		<select class="q3">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
 
-		<h3><strong>Question 4</strong></h3>
-		<h4>You rarely do something just out of sheer curiosity.</h4>
-		<select class="q4">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+		<div id="box5" class="box2">
+			<h3><strong>Question 5</strong></h3>
+			<h4>People can rarely upset you.</h4>
+			<select class="q5">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="5">Next Question</button>
+		</div>
 
-		<h3><strong>Question 5</strong></h3>
-		<h4>People can rarely upset you.</h4>
-		<select class="q5">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+		<div id="box6" class="box2">
+			<h3><strong>Question 6</strong></h3>
+			<h4>It is often difficult for you to relate to other people’s feelings.</h4>
+			<select class="q6">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="6">Next Question</button>
+		</div>
 
-		<h3><strong>Question 6</strong></h3>
-		<h4>It is often difficult for you to relate to other people’s feelings.</h4>
-		<select class="q6">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+		<div id="box7" class="box3">
+			<h3><strong>Question 7</strong></h3>
+			<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+			<select class="q7">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="6">Next Question</button>
+		</div>
 
-		<h3><strong>Question 7</strong></h3>
-		<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-		<select class="q7">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+		<div id="box8" class="box3">
+			<h3><strong>Question 8</strong></h3>
+			<h4>You rarely get carried away by fantasies and ideas.</h4>
+			<select class="q8">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="6">Next Question</button>
+		</div>
 
-		<h3><strong>Question 8</strong></h3>
-		<h4>You rarely get carried away by fantasies and ideas.</h4>
-		<select class="q8">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+		<div id="box9" class="box3">
+			<h3><strong>Question 9</strong></h3>
+			<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+			<select class="q9">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<button class="nextQ" value="6">Next Question</button>
+		</div>
 
-		<h3><strong>Question 9</strong></h3>
-		<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-		<select class="q9">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
+		<div id="box10" class="box4">
+			<h3><strong>Question 10</strong></h3>
+			<h4>You feel more energetic after spending time with a group of people.</h4>
+			<select class="q10">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select>
+			<br>
+			<br>
+			<hr>
+			<button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+		</div>
 
-		<h3><strong>Question 10</strong></h3>
-		<h4>You feel more energetic after spending time with a group of people.</h4>
-		<select class="q10">
-  			<option value="1">1</option>
-  			<option value="2">2</option>
-  			<option value="3">3</option>
-  			<option value="4">4</option>
-  			<option value="5">5</option>
-		</select>
-
-		<br>
-		<br>
-
-		<!-- Submit Button -->
-		<button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
- Submit</button>
-
-		<hr>
 	</div>
 
 	<!-- Modal -->
@@ -143,25 +174,291 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Congratulations! You have matched with <span id="match-name"></span>!</h4>
+		        <h4 class="modal-title" id="myModalLabel">Congratulations! You have matched with <b><span id="match-name"></span></b>!</h4>
 		      </div>
 		      <div class="modal-body">
 		        <img id="match-img">
-		        <h5 id="match-name-style">Click here to retake the test or click here to get in touch!</h5>
+		        <br>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		      <h5 id="match-name-style"><button type="button" id="reset" class="btn btn-primary" data-dismiss="modal">Click here</button> to retake the test!</h5>
 		      </div>
 		    </div>
 		  </div>
 		</div>
 
+<style>
+
+.rules{
+	text-align: center;
+}
+
+#match-img{
+	width: 100%;
+	height: 250px;
+}
+
+#container {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 55%;
+    overflow: hidden;  
+}
+
+.box {
+    position: absolute;
+    width: 50%;
+    height: 300px;;
+    text-align: center;
+    border: 2px solid black;
+    left: 50%;
+    top: 50px;
+    margin-left: -25%;
+}
+
+.box2 {
+    position: absolute;
+    width: 50%;
+    height: 300px;;
+    text-align: center;
+    border: 2px solid black;
+    left: 50%;
+    top: 50px;
+    margin-left: -25%;
+}
+
+.box3 {
+	position: absolute;
+    width: 50%;
+    height: 300px;;
+    text-align: center;
+    border: 2px solid black;
+    left: 50%;
+    top: 50px;
+    margin-left: -25%;
+}
+
+.box4 {
+	position: absolute;
+    width: 50%;
+    height: 300px;;
+    text-align: center;
+    border: 2px solid black;
+    left: 50%;
+    top: 50px;
+    margin-left: -25%;
+}
+
+#box3 {
+    left: -150%;
+    background-color: white;
+}
+
+#box1 {
+    background-color: white;
+}
+
+#box2 {
+    left: 150%;
+    background-color: white;
+}
+
+
+
+
+#box5 {
+	left: -150%;
+	background-color: white;
+}
+
+#box4 {
+	left: 150%;
+	background-color: white;
+}
+
+#box6 {
+	background-color: white;
+}
+
+
+
+#box8 {
+	left: -150%;
+	background-color: white;
+}
+
+#box7 {
+	left: 150%;
+	background-color: white;
+}
+
+#box9 {
+	background-color: white;
+}
+
+
+
+#box10 {
+	left: 150%;
+	background-color: white;
+}
+
+
+
+
+</style>
+
 <script type="text/javascript">
 
 $(document).ready(function(){
 
+	var nextQval = 1;
+	$('.box2').hide();
+	$('.box3').hide();
+	$('.box4').hide();
+
+$('.nextQ').click(function() {
+		nextQval++
+		console.log(nextQval)
+		checkNextQval();
+})
+
+	function checkNextQval(){
+		if (nextQval <= 3){
+			q1q3();
+		} else if (nextQval <= 6){
+			$('.box').hide();
+			$('.box2').show();
+			q4q6();
+		} else if (nextQval <= 9){
+			$('.box2').hide();
+			$('.box3').show();
+			q7q9();
+		} else if (nextQval == 10){
+			$('.box3').hide()
+			$('.box4').show();
+			q10();
+		}
+	}
+
+
+	function q1q3(){
+    	$('.box').each(function() {
+
+			if ($(this).offset().left > $('#container').width()) {
+
+            	$(this).animate({
+                	left: '50%',
+            	}, 1000 );
+
+        	} else if ($(this).offset().left < 0) {
+
+            	$(this).css("left", "150%");
+
+        	} else {
+
+            	$(this).animate({
+                	left: '-150%',
+            	}, 1000 );
+
+        	} 
+    	});		
+	}
+
+	function q4q6(){
+    	$('.box2').each(function() {
+
+			if ($(this).offset().left > $('#container').width()) {
+
+            	$(this).animate({
+                	left: '50%',
+            	}, 1000 );
+
+        	} else if ($(this).offset().left < 0) {
+
+            	$(this).css("left", "150%");
+
+        	} else {
+
+            	$(this).animate({
+                	left: '-150%',
+            	}, 1000 );
+
+        	} 
+    	});
+    }	
+
+    function q7q9(){
+    	$('.box3').each(function() {
+
+			if ($(this).offset().left > $('#container').width()) {
+
+            	$(this).animate({
+                	left: '50%',
+            	}, 1000 );
+
+        	} else if ($(this).offset().left < 0) {
+
+            	$(this).css("left", "150%");
+
+        	} else {
+
+            	$(this).animate({
+                	left: '-150%',
+            	}, 1000 );
+
+        	} 
+    	});	
+    }
+
+    function q10(){
+    	$('.box4').each(function() {
+
+			if ($(this).offset().left > $('#container').width()) {
+
+            	$(this).animate({
+                	left: '50%',
+            	}, 1000 );
+
+        	} else if ($(this).offset().left < 0) {
+
+            	$(this).css("left", "150%");
+
+        	} else {
+
+            	$(this).animate({
+                	left: '-150%',
+            	}, 1000 );
+            }
+    	});	
+    }
+
+	//$('.backQ').click(function() {
+    //	$('.box').each(function() {
+
+    //    	if ($(this).offset().right < 0) {
+
+    //        	$(this).css("right", "-150%");
+
+    //    	} else if ($(this).offset().right > $('#container').width()) {
+
+    //        	$(this).animate({
+    //            	right: '50%',
+    //        	}, 500 );
+
+    //    	} else {
+
+    //        	$(this).animate({
+    //            	right: '-150%',
+    //        	}, 500 );
+    //    	}
+    //	});
+	//});
+
+
 	$('select').select2({
-		placeholder: " "
 	});
 
 	var y = 0;
@@ -206,41 +503,52 @@ $(document).ready(function(){
 
 		});
 
-	var resultsArr = [];
+		var resultsArr = [];
 
-	function findFriend(friendData, newFriend){
-		y++;
+		function findFriend(friendData, newFriend){
+			y++;
 
-		var compareArr = [];
+			var compareArr = [];
 
-		console.log("==== Friend " + y + " results ====" )
+			console.log("==== Friend " + y + " results ====" )
 
-		for (i = 0; i < newFriend.length; i++){
+			for (i = 0; i < newFriend.length; i++){
 
-			var compare = Math.abs(friendData[i] - newFriend[i]); 
+				var compare = Math.abs(friendData[i] - newFriend[i]); 
 
-			compareArr.push(compare);
+				compareArr.push(compare);
+
+			}
+
+			console.log(compareArr);
+
+			var sum = compareArr.reduce(function(a, b) { return a + b; }, 0);
+
+			resultsArr.push(sum);
+
+			console.log("Totals: ");
+			console.log(resultsArr);
 
 		}
 
-		console.log(compareArr);
-
-		var sum = compareArr.reduce(function(a, b) { return a + b; }, 0);
-
-		resultsArr.push(sum);
-
-		console.log("Totals: ");
-		console.log(resultsArr);
-
-	}
-
-	function displayModal() {
-		$("#match-name").text(nameMatch);
-		$("#match-img").attr("src", imageMatch);
-		$("#myModal").modal();
-	};
+		function displayModal() {
+			$("#match-name").text(nameMatch);
+			$("#match-img").attr("src", imageMatch);
+			$("#myModal").modal();
+		};
 
 	});
+
+	$("#reset").on('click', function(){
+		resetSurvey();
+	});
+
+	function resetSurvey() {
+		nextQval = 1;
+		$('.box4').hide();
+		$('.box').show();
+		checkNextQval();
+	}
 
 });
 

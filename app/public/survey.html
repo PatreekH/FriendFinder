@@ -162,8 +162,56 @@
 
 <script type="text/javascript">
 
-$("#submit").on('click', function(){
-	console.log($(".q1").val(), $(".q2").val(), $(".q3").val(), $(".q4").val(), $(".q5").val(), $(".q6").val(), $(".q7").val(), $(".q8").val(), $(".q9").val(), $(".q10").val())
+$(document).ready(function(){
+
+	var y = 0;
+
+	var answerResults = [$(".q1").val(), $(".q2").val(), $(".q3").val(), $(".q4").val(), $(".q5").val(), $(".q6").val(), $(".q7").val(), $(".q8").val(), $(".q9").val(), $(".q10").val()]
+
+	$("#submit").on('click', function(){
+		var newFriend = {
+			userName: $('#name').val().trim(),
+			photo: $('#photo').val().trim(),
+			results: answerResults.map(Number)
+		};
+
+		var currentURL = window.location.origin;
+
+		var nameMatch;
+		var imageMatch;
+
+		$.get(currentURL + "/api/friends", function(friendData) {
+			for (var i = 0; i < friendData.length; i++){
+				findFriend(friendData[i].results, newFriend.results);
+			}
+
+		});
+	});
+
+	var resultsArr = [];
+
+	function findFriend(friendData, newFriend){
+		y++;
+		var compareArr = [];
+		console.log("====Friend: " + y + " ====" )
+		for (i = 0; i < newFriend.length; i++){
+			var compare = (friendData[i] - newFriend[i]); 
+			compareArr.push(compare);
+			//for (z = 0; z < compareArr.length; z++){
+
+			//}
+		}
+		console.log(compareArr);
+		var sum = compareArr.reduce(function(a, b) { return a + b; }, 0);
+		resultsArr.push(sum);
+		console.log(resultsArr);
+		Array.min = function( array ){
+    		return Math.min.apply( Math, array );
+		};
+		var match = Array.min(resultsArr);
+		console.log(match)
+	}
+
 });
 
 </script>
